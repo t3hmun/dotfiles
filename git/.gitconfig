@@ -5,4 +5,4 @@
 	name = t3hmun
 	email = git@t3hmun.com
 [core]
-  editor = lvim
+  editor = vim
