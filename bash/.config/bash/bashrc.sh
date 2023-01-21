@@ -11,3 +11,4 @@ fi
 
 alias ll='ls -lah'
 alias f='fd -H -E node_modules -E .git'
+alias lv='lvim'
