@@ -16,3 +16,6 @@ alias p='cd ~/p'
 alias h='cd ~'
 alias reload='exec bash --login'
 
+# Activate Starship prompt.
+command -v starship >/dev/null 2>&1 && eval "$(starship init bash)"
+
