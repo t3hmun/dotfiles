@@ -7,8 +7,9 @@ if [[ "$(uname -r)" == *"microsoft"* ]]; then
   alias w='cd /mnt/w/'
 fi
 
-# Vertical list, all files, human file sizes.
-alias ll='ls -lah'
+# A nice readable ls, use exa instead.
+# a=all, l=long, need color setting to get colours to pipe, -R to get color in less, -F to skip less on small outputs.
+alias ll='exa -al --git --color=always | less -RF'
 # I use this to list all the interesting files in a project. TODO write a program that limits depth / size.
 alias f='fd -H -E node_modules -E .git'
 # Lunar Vim is better than vscode.
@@ -23,4 +24,6 @@ alias reload='exec bash --login'
 
 # Activate Starship prompt.
 command -v starship >/dev/null 2>&1 && eval "$(starship init bash)"
+
+
 
