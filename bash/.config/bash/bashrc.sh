@@ -15,7 +15,7 @@ alias fd='fdfind'
 # a=all, l=long, need color setting to get colours to pipe, -R to get color in less, -F to skip less on small outputs.
 alias ll='exa -al --git --color=always | less -RF'
 # I use this to list all the interesting files in a project. TODO write a program that limits depth / size.
-alias f='fd -H -E node_modules -E .git'
+alias f='fd -H -E node_modules -E .git -E .nvm'
 # Lunar Vim is better than vscode.
 alias lv='lvim'
 # My favorite folders, instantly.
