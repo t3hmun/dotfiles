@@ -10,3 +10,5 @@ I use GNU Stow to symlink all the configs from the checked out dotfiles to `~/`.
 
 The `bashrc.sh` should be sourced from the bottom of the `~/.bashrc`, allowing the rest of it be unique to the machine.
 
+`source ~/.config/bash/bashrc.sh`
+

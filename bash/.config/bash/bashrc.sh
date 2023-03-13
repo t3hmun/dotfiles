@@ -7,6 +7,10 @@ if [[ "$(uname -r)" == *"microsoft"* ]]; then
   alias w='cd /mnt/w/'
 fi
 
+
+# fd on Ubuntu is installed from `fd-find` with comand set as fdfind. I like fd.
+alias fd='fdfind'
+
 # A nice readable ls, use exa instead.
 # a=all, l=long, need color setting to get colours to pipe, -R to get color in less, -F to skip less on small outputs.
 alias ll='exa -al --git --color=always | less -RF'
